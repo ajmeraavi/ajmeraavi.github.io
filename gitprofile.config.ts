@@ -57,26 +57,11 @@ const CONFIG = {
     imageURL: '',
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
-    researchGate: '',
-    facebook: '',
-    instagram: '',
-    reddit: '',
-    threads: '',
-    youtube: '', // example: 'pewdiepie'
-    udemy: '',
-    dribbble: '',
-    behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
-    skype: '',
-    telegram: '',
-    website: 'https://www.arifszn.com',
+    linkedin: 'aviajmera',
+    medium: 'ajmeraavi',
+
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'ajmeraavi@gmail.com',
   },
   resume: {
     fileUrl:
@@ -104,24 +89,17 @@ const CONFIG = {
       position: 'Position',
       from: 'September 2021',
       to: 'Present',
-      companyLink: 'https://example.com',
+      
     },
     {
       company: 'Company Name',
       position: 'Position',
       from: 'July 2019',
       to: 'August 2021',
-      companyLink: 'https://example.com',
+      
     },
   ],
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
+  
   educations: [
     {
       institution: 'Institution Name',
@@ -139,8 +117,7 @@ const CONFIG = {
   publications: [
     {
       title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
+
       authors: 'John Doe, Jane Smith',
       link: 'https://example.com',
       description:
@@ -148,8 +125,6 @@ const CONFIG = {
     },
     {
       title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
       authors: 'John Doe, Jane Smith',
       link: 'https://example.com',
       description:
@@ -158,9 +133,9 @@ const CONFIG = {
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
+    source: 'medium', // medium | dev
+    username: 'ajmeraavi', // to hide blog section, keep it empty
+    limit: 10, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
@@ -234,11 +209,7 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+  footer: `Made with ❤️`,
 
   enablePWA: true,
 };
