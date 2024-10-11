@@ -13,13 +13,11 @@ const CONFIG = {
         {
           title: 'Real-Time Scalable Leaderboard System',
           description: 'Engineered a real-time leaderboard system with Next.js, Redis Streams, Socket.io, and Node.js. Designed a distributed producer-consumer system for real-time event processing, optimizing response times for high-traffic periods.',
-          imageUrl: 'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
           link: 'https://github.com/ajmeraavi/leaderboard-system',
         },
         {
           title: 'Cloud EV Charging Station Finder Application',
           description: 'Constructed a real-time EV Charging Station Finder using React Native, Expo, Google Maps API, and Firebase for real-time updates and secure user authentication.',
-          imageUrl: 'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
           link: 'https://github.com/ajmeraavi/ev-charging-station-finder',
         },
       ],
@@ -28,7 +26,7 @@ const CONFIG = {
   seo: {
     title: 'Portfolio of Avi Ajmera',
     description: 'Portfolio showcasing projects and experience of Avi Ajmera, a Software Engineering graduate student at San Jose State University.',
-    imageURL: 'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+    imageURL: '',
   },
   social: {
     linkedin: 'aviajmera',
@@ -97,13 +95,11 @@ const CONFIG = {
   publications: [
     {
       title: 'Sentiment Analysis of IMDb movie reviews',
-      authors: 'Avi Ajmera, et al.',
       link: 'https://doi.org/10.22214/ijraset.2022.47795',
       description: 'Performed sentiment analysis on IMDb movie reviews using machine learning techniques to predict viewer sentiment and enhance recommendation systems.',
     },
     {
       title: 'Crop, Fertilizer, & Irrigation Recommendation using Machine Learning Techniques',
-      authors: 'Avi Ajmera, et al.',
       link: 'https://doi.org/10.22214/ijraset.2022.47793',
       description: 'Developed a machine learning-based system to provide optimized crop, fertilizer, and irrigation recommendations, enhancing agricultural productivity.',
     },
@@ -117,7 +113,7 @@ const CONFIG = {
     defaultTheme: 'lofi',
     disableSwitch: false,
     respectPrefersColorScheme: false,
-    displayAvatarRing: true,
+    displayAvatarRing: false, // Removed the avatar ring
     themes: [
       'light',
       'dark',
