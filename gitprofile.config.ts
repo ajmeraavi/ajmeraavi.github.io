@@ -1,216 +1,132 @@
-// gitprofile.config.ts
-
 const CONFIG = {
   github: {
-    username: 'ajmeraavi', // Your GitHub org/user name. (This is the only required config)
+    username: 'ajmeraavi', // Your GitHub username
   },
-  /**
-   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
-   * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
-   * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
-   */
   base: '/',
   projects: {
     github: {
-      display: false, // Display GitHub projects?
-      header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
-      automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
-        exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
-        },
-      },
-      manual: {
-        // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
-      },
+      display: false, // Keep GitHub projects hidden for now
     },
     external: {
       header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          title: 'Real-Time Scalable Leaderboard System',
+          description: 'Engineered a real-time leaderboard system with Next.js, Redis Streams, Socket.io, and Node.js. Designed a distributed producer-consumer system for real-time event processing, optimizing response times for high-traffic periods.',
+          imageUrl: 'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://github.com/ajmeraavi/leaderboard-system',
         },
         {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          title: 'Cloud EV Charging Station Finder Application',
+          description: 'Constructed a real-time EV Charging Station Finder using React Native, Expo, Google Maps API, and Firebase for real-time updates and secure user authentication.',
+          imageUrl: 'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://github.com/ajmeraavi/ev-charging-station-finder',
         },
       ],
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
-    description: '',
-    imageURL: '',
+    title: 'Portfolio of Avi Ajmera',
+    description: 'Portfolio showcasing projects and experience of Avi Ajmera, a Software Engineering graduate student at San Jose State University.',
+    imageURL: 'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
   },
   social: {
     linkedin: 'aviajmera',
     medium: 'ajmeraavi',
-
-    phone: '',
+    phone: '(669) 301-5894',
     email: 'ajmeraavi@gmail.com',
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: 'http://ajmeraavi.github.io/avi-ajmera-resume.pdf', // Update this link if needed
   },
   skills: [
-    'PHP',
-    'Laravel',
+    'Python',
     'JavaScript',
     'React.js',
+    'Next.js',
     'Node.js',
-    'Nest.js',
+    'Redis',
+    'Firebase',
+    'MongoDB',
     'MySQL',
-    'PostgreSQL',
-    'Git',
+    'Tableau',
     'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    'Kubernetes',
+    'Git',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
+      company: 'San Jose State University',
+      position: 'Graduate Project Lead',
+      from: 'May 2024',
       to: 'Present',
-      
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      
+      company: 'Aavas Financiers',
+      position: 'Data Analytics Intern',
+      from: 'May 2022',
+      to: 'September 2022',
+    },
+    {
+      company: 'Deorwine Infotech',
+      position: 'Software Developer Intern',
+      from: 'May 2021',
+      to: 'June 2021',
     },
   ],
-  
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'San Jose State University',
+      degree: 'Master of Science in Software Engineering',
+      from: '2023',
+      to: 'Expected 2025',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'NMIMS University',
+      degree: 'Master of Business Administration in Technology Management',
+      from: '2018',
+      to: '2023',
+    },
+    {
+      institution: 'NMIMS University',
+      degree: 'Bachelor of Technology in Computer Engineering',
+      from: '2018',
+      to: '2023',
     },
   ],
   publications: [
     {
-      title: 'Publication Title',
-
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Sentiment Analysis of IMDb movie reviews',
+      authors: 'Avi Ajmera, et al.',
+      link: 'https://doi.org/10.22214/ijraset.2022.47795',
+      description: 'Performed sentiment analysis on IMDb movie reviews using machine learning techniques to predict viewer sentiment and enhance recommendation systems.',
     },
     {
-      title: 'Publication Title',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Crop, Fertilizer, & Irrigation Recommendation using Machine Learning Techniques',
+      authors: 'Avi Ajmera, et al.',
+      link: 'https://doi.org/10.22214/ijraset.2022.47793',
+      description: 'Developed a machine learning-based system to provide optimized crop, fertilizer, and irrigation recommendations, enhancing agricultural productivity.',
     },
   ],
-  // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: 'medium', // medium | dev
-    username: 'ajmeraavi', // to hide blog section, keep it empty
-    limit: 10, // How many articles to display. Max is 10.
-  },
-  googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-  },
-  // Track visitor interaction and behavior. https://www.hotjar.com
-  hotjar: {
-    id: '',
-    snippetVersion: 6,
+    source: 'medium',
+    username: 'ajmeraavi',
+    limit: 10,
   },
   themeConfig: {
     defaultTheme: 'lofi',
-
-    // Hides the switch in the navbar
-    // Useful if you want to support a single color mode
     disableSwitch: false,
-
-    // Should use the prefers-color-scheme media-query,
-    // using user system preferences, instead of the hardcoded defaultTheme
     respectPrefersColorScheme: false,
-
-    // Display the ring in Profile picture
     displayAvatarRing: true,
-
-    // Available themes. To remove any theme, exclude from here.
     themes: [
       'light',
       'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
       'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
       'winter',
-      'dim',
-      'nord',
-      'sunset',
-      'procyon',
+      'night',
     ],
-
-    // Custom theme, applied to `procyon` theme
-    customTheme: {
-      primary: '#fc055b',
-      secondary: '#219aaf',
-      accent: '#e8d03a',
-      neutral: '#2A2730',
-      'base-100': '#E3E3ED',
-      '--rounded-box': '3rem',
-      '--rounded-btn': '3rem',
-    },
   },
-
-  // Optional Footer. Supports plain text or HTML.
-  footer: `Made with ❤️`,
-
+  footer: `Made with ❤️ by Avi Ajmera`,
   enablePWA: true,
 };
 
